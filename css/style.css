@@ -902,7 +902,7 @@ i:nth-child(n + 8) {
 
 @media only screen and (max-width: 388px) {
   .box-headline b {
-    font-size: 65px;
+    font-size: 66px;
   }
    .box-words-wrapper b.is-visible {
     white-space: pre-line;
