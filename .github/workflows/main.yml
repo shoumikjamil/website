@@ -1,0 +1,19 @@
+# Basic GitHub Action workflow to autodeploy files to Firebase Hosting
+
+name: CI
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Firebase Deploy
+      run: |
+        sudo npm install -g firebase-tools
+        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+        echo Deploy complete!
