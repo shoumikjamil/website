@@ -158,7 +158,10 @@ h5 {
 }
 
 /*---- span -----*/
-.title-small span { position: relative;}
+.title-small span { 
+  position: relative;
+  padding-left: 5px;
+}
 .title-small span:after {
   content: "";
   position: absolute;
@@ -166,7 +169,7 @@ h5 {
   height: 3px;
   background: #DEDEDE;
   width: 28px;
-  left: 0;
+  left: 5px;
 }
 .title-small-center span {position: relative;}
 .title-small-center span:after {
@@ -852,48 +855,10 @@ i:nth-child(n + 8) {
     top: 0;
 }
 
-@media only screen and (max-width: 650px) {
-  .box-headline b {
-    font-size: 65px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box-headline b {
-    font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .box-headline b {
-    font-size: 85px;
-  }
-   .box-words-wrapper b.is-visible {
-    white-space: pre-line;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .box-headline b {
-    font-size: 80px;
-  }
-   .box-words-wrapper b.is-visible {
-    white-space: pre-line;
-  }
-}
-
-@media only screen and (max-width: 445px) {
-  .box-headline b {
-    font-size: 75px;
-  }
-   .box-words-wrapper b.is-visible {
-    white-space: pre-line;
-  }
-}
 
 @media only screen and (max-width: 415px) {
   .box-headline b {
-    font-size: 70px;
+    font-size: 80px;
   }
    .box-words-wrapper b.is-visible {
     white-space: pre-line;
@@ -911,7 +876,7 @@ i:nth-child(n + 8) {
 
 @media only screen and (max-width: 360px) {
   .box-headline b {
-    font-size: 60px;
+    font-size: 65px;
   }
  .box-words-wrapper b.is-visible {
     white-space: pre-line;
